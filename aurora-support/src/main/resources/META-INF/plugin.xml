@@ -31,4 +31,7 @@
             <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFromTemplate"/>
         </action>
     </actions>
+    <depends>com.intellij.modules.xml</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
 </idea-plugin>
