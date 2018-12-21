@@ -1,6 +1,6 @@
 package com.hand.ide.plugin.aurora.lang;
 
-import com.intellij.lang.Language;
+import com.intellij.lang.xml.XMLLanguage;
 
 /**
  * @author xuzhao
@@ -8,11 +8,11 @@ import com.intellij.lang.Language;
  * @description 定义Aurora语言类型
  * @time 2018/12/21 12:47
  */
-public class AuroraLanguage extends Language {
+public class AuroraLanguage extends XMLLanguage {
 
     public static final AuroraLanguage INSTANCE = new AuroraLanguage();
 
     private AuroraLanguage() {
-        super("Aurora");
+        super(XMLLanguage.INSTANCE, "Aurora", "text/xhtml", "application/xhtml+xml");
     }
 }

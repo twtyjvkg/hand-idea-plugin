@@ -17,9 +17,18 @@
 
         <!-- 注册Aurora文件工厂 -->
         <fileTypeFactory implementation="com.hand.ide.plugin.aurora.fileTypes.AuroraFileTypeFactory" />
+
+        <!-- 注册Aurora语法分析器 -->
+        <lang.parserDefinition language="Aurora" implementationClass="com.hand.ide.plugin.aurora.lang.AuroraParserDefinition" />
+
+        <!-- 注册screen文件的xsd -->
+        <standardResource url="http://www.aurora-framework.org/application" path="/standardSchemas/aurora_screen.xsd"/>
     </extensions>
 
     <actions>
         <!-- Add your actions here -->
+        <action id="NewScreenFile" class="com.hand.ide.plugin.aurora.actions.CreateScreenFileAction">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFromTemplate"/>
+        </action>
     </actions>
 </idea-plugin>

@@ -2,7 +2,7 @@ package com.hand.ide.plugin.aurora.fileTypes;
 
 import com.hand.ide.plugin.aurora.icons.AuroraIcons;
 import com.hand.ide.plugin.aurora.lang.AuroraLanguage;
-import com.intellij.openapi.fileTypes.LanguageFileType;
+import com.intellij.ide.highlighter.XmlLikeFileType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -14,7 +14,7 @@ import javax.swing.*;
  * @description 定义svc文件类型
  * @time 2018/12/21 13:17
  */
-public class SvcFileType extends LanguageFileType {
+public class SvcFileType extends XmlLikeFileType {
 
     public static final SvcFileType INSTANCE = new SvcFileType();
 
