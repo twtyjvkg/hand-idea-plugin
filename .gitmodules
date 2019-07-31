@@ -4,3 +4,6 @@
 [submodule "hap-support"]
 	path = hap-support
 	url = git@github.com:twtyjvkg/hap-support.git
+[submodule "hzero-support"]
+	path = hzero-support
+	url = git@github.com:twtyjvkg/hzero-support.git

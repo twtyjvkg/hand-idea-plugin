@@ -1,4 +1,5 @@
 rootProject.name = 'idea-plugin'
 include 'aurora-support'
 include 'hap-support'
+include 'hzero-support'
 
